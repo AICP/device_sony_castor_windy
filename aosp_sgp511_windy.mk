@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_shinano_castor_windy_defconfig
+TARGET_KERNEL_CONFIG := aosp_shinano_castor_defconfig
 
 $(call inherit-product, device/sony/castor/aosp_sgp521_common.mk)
 

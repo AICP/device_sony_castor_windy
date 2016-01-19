@@ -28,3 +28,6 @@ ro.radio.noril=true
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/castor_windy/castor_windy-vendor.mk)
+
+# TWRP
+$(call inherit-product, device/sony/castor_windy/twrp.mk)

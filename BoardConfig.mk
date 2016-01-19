@@ -21,3 +21,5 @@ TARGET_BOOTLOADER_BOARD_NAME := SGP511,SGP512
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_castor_windy_defconfig
+
+TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab

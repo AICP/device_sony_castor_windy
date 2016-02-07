@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.castor_windy
 
-PRODUCT_NAME := aosp_sgp511_windy
+PRODUCT_NAME := aosp_sgp511
 PRODUCT_DEVICE := castor_windy
 PRODUCT_MODEL := Xperia Z2 Tablet WiFi(AOSP)
 PRODUCT_BRAND := Sony

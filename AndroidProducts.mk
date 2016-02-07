@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_sgp511_windy.mk
+	$(LOCAL_DIR)/aosp_sgp511.mk

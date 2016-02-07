@@ -17,6 +17,9 @@ TARGET_KERNEL_CONFIG := aosp_shinano_castor_defconfig
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.castor_windy \

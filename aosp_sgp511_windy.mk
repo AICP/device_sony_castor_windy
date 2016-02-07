@@ -14,7 +14,7 @@
 
 TARGET_KERNEL_CONFIG := aosp_shinano_castor_defconfig
 
-$(call inherit-product, device/sony/castor/aosp_sgp521_common.mk)
+$(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)
 
 # Device Init
 PRODUCT_PACKAGES += \

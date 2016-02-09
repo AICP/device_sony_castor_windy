@@ -15,10 +15,6 @@
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/castor_windy/overlay
 
-$(call inherit-product, device/sony/shinano/platform.mk)
-$(call inherit-product, vendor/sony/castor/castor-vendor.mk)
-$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-
 PRODUCT_COPY_FILES += \
     device/sony/castor_windy/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/castor_windy/rootdir/system/etc/BCM4339.hcd:system/etc/firmware/BCM43xx.hcd \
@@ -66,6 +62,10 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_CHARACTERISTICS := tablet
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=240 \
     ro.usb.pid_suffix=1B1
+
+$(call inherit-product, device/sony/shinano/platform.mk)
+$(call inherit-product, vendor/sony/castor/castor-vendor.mk)
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)

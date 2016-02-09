@@ -14,10 +14,7 @@
 
 TARGET_KERNEL_CONFIG := aosp_shinano_castor_defconfig
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)
-
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -40,6 +37,10 @@ PRODUCT_PACKAGES += \
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.castor_windy
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 PRODUCT_NAME := aosp_sgp511
 PRODUCT_DEVICE := castor_windy

@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
     device/sony/castor_windy/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.preset:/system/etc/tfa98xx/VoiceCallEarpice_top.preset \
     device/sony/castor_windy/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.eq:/system/etc/tfa98xx/VoiceCallEarpice_top.eq
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+
 PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREBUILT_DPI := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi

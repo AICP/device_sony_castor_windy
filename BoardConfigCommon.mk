@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano/PlatformConfig.mk
+include device/sony/shinano-common/PlatformConfig.mk
+include device/sony/shinano-common/PlatformConfig2.mk
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/castor_windy/kernel-headers
 

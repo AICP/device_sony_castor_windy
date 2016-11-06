@@ -1,4 +1,3 @@
-#
 # Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,6 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-add_lunch_combo aosp_sgp511-userdebug
+# Assert
+TARGET_OTA_ASSERT_DEVICE := SGP511,SGP512,castor_windy
+
+# Inherit AOSP Shinano common device parts
+$(call inherit-product, device/sony/castor_windy/aosp_sgp511.mk)
+
+# Inherit AICP Shinano common device parts
+$(call inherit-product, device/sony/shinano-common/platform2.mk)
+
+# Override Product Name for AICP
+PRODUCT_NAME := aicp_castor_windy
+PRODUCT_MODEL := Xperia Z2 Tablet

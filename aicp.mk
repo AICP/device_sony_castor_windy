@@ -21,6 +21,10 @@ $(call inherit-product, device/sony/castor_windy/aosp_sgp511.mk)
 # Inherit AICP Shinano common device parts
 $(call inherit-product, device/sony/shinano-common/platform2.mk)
 
+# Dalvik/HWUI
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
 # Override Product Name for AICP
 PRODUCT_NAME := aicp_castor_windy
 PRODUCT_MODEL := Xperia Z2 Tablet

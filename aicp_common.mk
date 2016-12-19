@@ -12,15 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := SGP511,SGP512,castor_windy
+# Inherit AICP Shinano common device parts
+$(call inherit-product, device/sony/shinano-common/platform2.mk)
 
-# Inherit AOSP Shinano common device parts
-$(call inherit-product, device/sony/castor_windy/aosp_sgp511.mk)
+# Dalvik/HWUI
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
-# Inherit AICP castor common device parts
-$(call inherit-product, device/sony/castor_windy/aicp_common.mk)
-
-# Override Product Name for AICP
-PRODUCT_NAME := aicp_castor_windy
-PRODUCT_MODEL := Xperia Z2 Tablet
+# AICP hardware info
+TARGET_SYSTEM_PROP += device/sony/castor_windy/aicp.system.prop

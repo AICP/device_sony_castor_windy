@@ -28,3 +28,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui
 # Override Product Name for AICP
 PRODUCT_NAME := aicp_castor_windy
 PRODUCT_MODEL := Xperia Z2 Tablet
+
+# AICP hardware info
+TARGET_SYSTEM_PROP += device/sony/castor_windy/aicp.system.prop

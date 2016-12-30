@@ -35,8 +35,8 @@ PRODUCT_PACKAGES += \
     power.castor_windy
 
 # NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.castor_windy
+#PRODUCT_PACKAGES += \
+#    nfc_nci.castor_windy
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)

@@ -19,5 +19,8 @@ $(call inherit-product, device/sony/shinano-common/platform2.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
+# CMHW
+BOARD_HARDWARE_CLASS += device/sony/castor_windy/cmhw
+
 # AICP hardware info
 TARGET_SYSTEM_PROP += device/sony/castor_windy/aicp.system.prop

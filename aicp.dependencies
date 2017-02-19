@@ -23,5 +23,10 @@
     "repository":   "sonyxperiadev/packages-apps-FMRadio",
     "target_path":  "packages/apps/FMRadio",
     "branch":       "master"
+  },
+  {
+    "repository":   "SpiritCroc/android_hardware_broadcom_libbt",
+    "target_path":  "hardware/broadcom/libbt",
+    "branch":       "AICP-n7.1"
   }
 ]

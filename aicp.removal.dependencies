@@ -10,8 +10,5 @@
   },
   {
     "repository":   "LineageOS/android_packages_apps_FMRadio"
-  },
-  {
-    "repository":   "LineageOS/android_hardware_broadcom_libbt"
   }
 ]

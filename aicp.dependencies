@@ -1,0 +1,58 @@
+[
+  {
+    "repository": "AICP/device_sony_shinano-common",
+    "target_path": "device/sony/shinano-common",
+    "branch": "n7.1"
+  },
+  {
+    "repository": "Sony-Stock-CM/android_kernel_sony_msm8974",
+    "target_path": "kernel/sony/msm8974",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "Sony-Stock-CM/android_device_sony_msm8974-common",
+    "target_path": "device/sony/msm8974-common",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_device_sony_common",
+    "target_path": "device/sony/common",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_hardware_sony_thermanager",
+    "target_path": "hardware/sony/thermanager",
+    "branch": "cm-14.1"
+  },
+  {
+
+    "repository": "LineageOS/android_hardware_sony_macaddrsetup",
+    "target_path": "hardware/sony/macaddrsetup",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_external_stlport",
+    "target_path": "external/stlport",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "LineageOS/android_hardware_broadcom_fm",
+    "target_path": "hardware/broadcom/fm",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "Sony-Stock-CM/proprietary_vendor_sony",
+    "target_path": "vendor/sony",
+    "branch": "cm-14.1"
+  }
+]

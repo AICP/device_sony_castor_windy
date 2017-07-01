@@ -1,0 +1,7 @@
+# Display common
+TARGET_SCREEN_HEIGHT := 1200
+TARGET_SCREEN_WIDTH := 1920
+
+# LCD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=240

@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2017 - The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,23 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+DEVICE_PATH := device/sony/castor_windy
+
 # inherit from the common shinano definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
+# inherit from the board common definitions
+include $(DEVICE_PATH)/board-common/*.mk
+
+# inherit specific Header
 TARGET_SPECIFIC_HEADER_PATH += device/sony/castor_windy/include
-
-BOARD_HARDWARE_CLASS += device/sony/castor_windy/cmhw
-
-# For two-stage boot configuration
-TARGET_RECOVERY_DEVICE_DIRS := device/sony/castor_windy
-
-# Partition information
-BOARD_VOLD_MAX_PARTITIONS := 26
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12253589504 # 12253605888 - 16384
-
-# Double Tap to Wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
-
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/sony/castor_windy/sepolicy

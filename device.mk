@@ -1,5 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2017 - The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,24 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
+# Inherit the castor-common definitions
+$(call inherit-product, device/sony/castor_windy/device-common.mk)
 
-# Common castor Resources
-$(call inherit-product, device/sony/castor_windy/full_castor-common.mk)
-
-DEVICE_PACKAGE_OVERLAYS += \
-     device/sony/castor_windy/overlay
+# Inherit the product definitions
+include $(LOCAL_PATH)/product/*.mk
 
 #Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from castor device
-$(call inherit-product, device/sony/castor_windy/castor_windy.mk)
+# Include Vendor files
+$(call inherit-product, vendor/sony/castor_windy/castor_windy-vendor.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_castor_windy
+PRODUCT_NAME := castor_windy
 PRODUCT_DEVICE := castor_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z2 Tablet Wifi
+PRODUCT_MODEL := Xperia Z2 Tablet WiFi
+
+

@@ -1,8 +1,8 @@
 [
   {
-    "repository": "Sony-Stock-CM/android_device_sony_shinano-common",
+    "repository": "AICP/device_sony_shinano-common",
     "target_path": "device/sony/shinano-common",
-    "branch": "cm-14.1"
+    "branch": "n7.1"
   },
   {
     "repository": "Sony-Stock-CM/android_kernel_sony_msm8974",

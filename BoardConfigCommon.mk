@@ -28,7 +28,3 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12253589504 # 12253605888 - 16384
 
 # Double Tap to Wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
-
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/sony/castor_windy/sepolicy

@@ -27,8 +27,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml   
      
 # Device is a Tablet
-PRODUCT_CHARACTERISTICS := tablet
-
 PRODUCT_AAPT_CONFIG := normal large
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 

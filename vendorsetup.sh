@@ -1,2 +1,2 @@
-add_lunch_combo lineage_castor_windy-eng
-add_lunch_combo lineage_castor_windy-userdebug
+add_lunch_combo aicp_castor_windy-eng
+add_lunch_combo aicp_castor_windy-userdebug

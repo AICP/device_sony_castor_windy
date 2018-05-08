@@ -23,7 +23,4 @@ include $(DEVICE_PATH)/board-common/*.mk
 # inherit specific Header
 TARGET_SPECIFIC_HEADER_PATH += device/sony/castor_windy/include
 
-# exFAT
-TARGET_EXFAT_DRIVER := exfat
-
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

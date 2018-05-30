@@ -18,9 +18,11 @@ $(call inherit-product, device/sony/shinano-common/shinano.mk)
 # Inherit the product-common definitions
 include $(LOCAL_PATH)/product-common/*.mk
 
-# Dalvik/HWUI
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+# setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
+# setup HWUI configs
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \

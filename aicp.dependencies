@@ -2,6 +2,6 @@
   {
     "repository": "AICP/device_sony_shinano-common",
     "target_path": "device/sony/shinano-common",
-    "branch": "o8.1"
+    "branch": "p9.0"
   }
 ]

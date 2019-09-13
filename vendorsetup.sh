@@ -1,2 +1,0 @@
-add_lunch_combo aicp_castor_windy-eng
-add_lunch_combo aicp_castor_windy-userdebug
